@@ -1,12 +1,13 @@
 $(document).ready(function () {
   getQuote()
-  $('#text').text("Loading...")
   $('#new-quote').click(getQuote)
 })
 
 function getQuote() {
   const url = 'https://api.api-ninjas.com/v1/quotes'
   const key = 'owbKpeMODWR/G7fp5SmgvQ==RrQ9zsAXRb2lVf9m'
+  $('#text').text("Loading...")
+  $('#author').text("...")
   $.ajax({
     method: 'GET',
     url: url,
@@ -22,6 +23,7 @@ function getQuote() {
     error: function ajaxError(jqXHR) {
       console.error('Error: ', jqXHR.responseText);
       $('#text').text("Something was wrong");
+      $('#author').text("...");
     }
   });
 }
