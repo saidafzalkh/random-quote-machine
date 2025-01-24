@@ -1,5 +1,5 @@
 # Random Quote Machine
-This app was created as a project for the "freecodecamp Front End Development Libraries" course
+This app was created as a project for educational purposes 
 
 [![Preview ](./Preview.png "Preview ")](./Preview.png "Preview ")
 
